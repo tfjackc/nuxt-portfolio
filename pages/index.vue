@@ -3,7 +3,8 @@
 </script>
 
 <template>
-  <div class="flex flex-row justify-center items-center h-screen space-x-4"> <!-- Center items and add horizontal space -->
+  <Navbar />
+  <div class="flex flex-col md:flex-row justify-center h-screen space-y-4 md:space-y-0 md:space-x-4"> <!-- Stack on small screens, flex-row on medium screens and up -->
     <div class="flex flex-col">
       <NameAndTitle />
       <TailwindCard />
