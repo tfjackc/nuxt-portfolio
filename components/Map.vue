@@ -16,8 +16,8 @@ onMounted(() => {
     const map = new maplibregl.Map({
       container: mapContainer.value,
       style: minimalStyle, // use minimal style
-      center: [0, 0],
-      zoom: 1,
+      center: [-98.5795, 39.8283], // Center on the United States
+      zoom: 2, // Adjust the zoom level as needed
     });
 
     map.on('load', () => {
@@ -45,7 +45,7 @@ onMounted(() => {
 
 
 <template>
-  <div ref="mapContainer" class="h-96"></div>
+  <div ref="mapContainer" class="h-96 w-96"></div>
 </template>
 
 <style scoped>
