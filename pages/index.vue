@@ -10,6 +10,13 @@
       <div class="py-6 mt-10">
       <WebDev />
       </div>
+      <div class="py-6 mt-10">
+        <FrontEnd />
+      </div>
+      <div class="py-6 mt-10">
+        <PythonSkills />
+      </div>
+
     </div>
     <div class="flex flex-col">
       <Map />
