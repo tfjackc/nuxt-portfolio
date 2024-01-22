@@ -49,7 +49,7 @@ onMounted(() => {
 
 
 <template>
-  <div ref="mapContainer" class="h-96 w-96 md:h-[500px] md:w-[500px] lg:h-[600px] lg:w-[600px] xl:h-[700px] xl:w-[700px]"></div>
+  <div ref="mapContainer" class="md:h-[500px] md:w-[800px] lg:h-[600px] lg:w-[800px] xl:h-[700px] xl:w-[1000px]"></div>
 
 </template>
 

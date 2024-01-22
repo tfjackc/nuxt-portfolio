@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<div class="rounded overflow-hidden shadow-lg border border-white hover:bg-stone-900 hover:border-stone-50 flex flex-col md:flex-row justify-between">
+<div class="rounded overflow-hidden shadow-lg hover:bg-stone-900 hover:border-stone-50 flex flex-col md:flex-row justify-between">
 <div class="px-6 py-4">
 <!--      <div class="font-bold text-xl mb-2">Web Application Development</div>-->
 <!--      <p class="text-gray-400 text-base">-->

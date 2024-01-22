@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="max-w-sm rounded overflow-hidden shadow-lg border border-white hover:bg-stone-900">
+  <div class="max-w-sm rounded overflow-hidden shadow-lg hover:bg-stone-900">
     <div class="px-6 py-4">
       <div class="flex items-center mb-4">
         <Icon name="logos:python" color="white" size="36" class="m-1"/>
