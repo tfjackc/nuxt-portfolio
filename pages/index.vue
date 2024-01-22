@@ -4,10 +4,12 @@
 
 <template>
   <Navbar />
-  <div class="flex flex-col md:flex-row justify-center h-screen space-y-4 md:space-y-0 md:space-x-4"> <!-- Stack on small screens, flex-row on medium screens and up -->
-    <div class="flex flex-col">
+  <div class="flex flex-col md:flex-row h-screen md:justify-center lg:justify-center"> <!-- Stack on small screens, flex-row on medium screens and up -->
+    <div class="flex flex-col px-6 py-4">
       <NameAndTitle />
-      <TailwindCard />
+      <div class="py-6 mt-10">
+      <WebDev />
+      </div>
     </div>
     <div class="flex flex-col">
       <Map />

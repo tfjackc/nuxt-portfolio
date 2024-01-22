@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
+import 'maplibre-gl/dist/maplibre-gl.css'
 import maplibregl, { StyleSpecification } from 'maplibre-gl';
 const mapContainer = ref(null);
 
@@ -11,7 +12,6 @@ onMounted(() => {
       sources: {},
       layers: []
     };
-
     // Initialize the map with the minimal style
     const map = new maplibregl.Map({
       container: mapContainer.value,
@@ -39,13 +39,18 @@ onMounted(() => {
         }
       });
     });
+    new maplibregl.Marker()
+        .setLngLat([-120.84711, 44.30291])
+        .setPopup(new maplibregl.Popup().setHTML("<div class='text-xl text-stone-900'>Location: Prineville, OR </div>")) // add popup
+        .addTo(map);
   }
 });
 </script>
 
 
 <template>
-  <div ref="mapContainer" class="h-96 w-96"></div>
+  <div ref="mapContainer" class="h-96 w-96 md:h-[500px] md:w-[500px] lg:h-[600px] lg:w-[600px] xl:h-[700px] xl:w-[700px]"></div>
+
 </template>
 
 <style scoped>
