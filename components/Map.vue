@@ -16,22 +16,22 @@ onMounted(() => {
     const map = new maplibregl.Map({
       container: mapContainer.value,
       style: minimalStyle, // use minimal style
-      center: [-98.5795, 39.8283], // Center on the United States
-      zoom: 2, // Adjust the zoom level as needed
+      center: [-120.84711, 44.30291], // Center on the United States
+      zoom: 6, // Adjust the zoom level as needed
     });
 
     map.on('load', () => {
       // Add the GeoJSON source for countries
-      map.addSource('countries', {
+      map.addSource('oregon_state', {
         type: 'geojson',
-        data: 'https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json'
+        data: 'https://services8.arcgis.com/8PAo5HGmvRMlF2eU/arcgis/rest/services/Counties_Polygon/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson'
       });
 
       // Add a layer for the countries source
       map.addLayer({
-        'id': 'countries-layer',
+        'id': 'oregon_state_boundary',
         'type': 'fill',
-        'source': 'countries',
+        'source': 'oregon_state',
         'paint': {
           'fill-color': '#0c0a09', // Example fill color
           'fill-opacity': 1,
