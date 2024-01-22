@@ -3,8 +3,8 @@
 </script>
 
 <template>
-<!--  <div class="max-w-sm rounded overflow-hidden shadow-lg border border-stone-500 hover:bg-stone-900 hover:border-stone-50">-->
-<!--    <div class="px-6 py-4">-->
+<div class="rounded overflow-hidden shadow-lg border border-stone-500 hover:bg-stone-900 hover:border-stone-50 flex flex-col md:flex-row justify-between">
+<div class="px-6 py-4">
 <!--      <div class="font-bold text-xl mb-2">Web Application Development</div>-->
 <!--      <p class="text-gray-400 text-base">-->
 <!--        Develop, maintain, and distribute web services through the ArcGIS Enterprise Portal & ArcGIS Server.-->
@@ -14,10 +14,9 @@
 <!--      </p>-->
 <!--    </div>-->
 <!--  </div>-->
-
   <div class="flex flex-col md:flex-row justify-between">
     <!-- First Column -->
-    <div class="flex-1">
+    <div class="flex-1 md:mt-0 max-w-96 pr-1">
       <!-- GIS Development -->
       <div class="flex items-center mb-4">
         <Icon name="gis:layer-alt-poi" color="white" size="36" class="m-1"/>
@@ -29,7 +28,7 @@
     </div>
 
     <!-- Second Column -->
-    <div class="flex-1 mt-6 md:mt-0">
+    <div class="flex-1 mt-6 md:mt-0 max-w-96 pr-1">
       <!-- Front End Technologies -->
       <div class="flex items-center mb-4">
         <Icon name="gis:earth-network" color="white" size="36" class="m-1"/>
@@ -47,6 +46,8 @@
       </p>
     </div>
   </div>
+</div>
+</div>
 </template>
 
 <style scoped>
