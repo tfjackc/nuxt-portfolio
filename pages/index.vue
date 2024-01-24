@@ -16,7 +16,7 @@
         <PythonSkills />
       </div>
       <div class="p-4 md:w-1/5 ml-2"> <!-- Box for Database with border, padding and margin-left -->
-        <div>Database Component</div>
+        <Database />
       </div>
     </div>
   </div>
