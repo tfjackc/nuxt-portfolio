@@ -1,14 +1,9 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-  <div class="flex flex-col h-screen"> <!-- Main vertical container -->
-
-    <div class="flex flex-row justify-between items-center px-10 py-5"> <!-- Top horizontal container -->
+  <div class="container flex flex-col h-screen justify-center mx-auto">
+    <div class="flex flex-row items-center px-10 py-5">
         <NameAndTitle />
-<!--        <Map />-->
-      <NuxtImg src="/bright_map.png"/>
+        <Map />
+<!--      <NuxtImg src="/bright_map.png"/>-->
     </div>
     <div class="flex flex-col md:flex-row px-10 py-5"> <!-- Bottom horizontal container -->
       <div class="p-4 md:w-1/5 mr-2"> <!-- Box for WebDev with border, padding and margin-right -->
@@ -24,15 +19,12 @@
         <div>Database Component</div>
       </div>
     </div>
-
   </div>
 </template>
 
-<style>
-/* Optional: if you want to add custom styles */
-</style>
+<script setup lang="ts">
 
-
+</script>
 
 <style scoped>
 
